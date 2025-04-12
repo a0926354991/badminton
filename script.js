@@ -118,3 +118,29 @@ function updateDisplay() {
     emptyCourtsList.innerHTML = emptyCourtNames.map(name => `<li>${name}</li>`).join("");
   }
 }
+
+function leavePlayer() {
+    const name = document.getElementById("leaveNameInput").value.trim();
+    if (!name) return;
+  
+    // 從等候區移除
+    queue = queue.filter(n => n !== name);
+  
+    // 從球場中移除
+    courts.forEach((court, index) => {
+      if (court.includes(name)) {
+        courts[index] = court.filter(n => n !== name);
+        speak(`${name} 已從場地 ${index + 1} 離開`);
+      }
+    });
+  
+    // 從排序區移除
+    sortedQueue = sortedQueue.filter(n => n !== name);
+  
+    // 若有被選取也移除
+    selectedFromSorted.delete(name);
+  
+    document.getElementById("leaveNameInput").value = "";
+    updateDisplay();
+}
+  

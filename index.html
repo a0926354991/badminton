@@ -20,6 +20,11 @@
         <input id="nameInput" type="text" placeholder="輸入名字">
         <button onclick="signIn()">簽到</button>
       </div>
+      
+      <div class="leave">
+        <input type="text" id="leaveNameInput" placeholder="輸入要離開的人名">
+        <button onclick="leavePlayer()">提前離開</button>
+      </div>
 
       <div class="queue">
         <h2>🧍 等候區</h2>
@@ -39,7 +44,7 @@
       </div>      
 
       <div id="courtsArea" class="courts-area"></div>
-    </div>
+    </div>    
   </div>
 
   <script src="script.js"></script>
