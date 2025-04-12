@@ -1,0 +1,181 @@
+body {
+    background-image: url('image.png');
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008080;
+  }
+  
+  input[type="text"], input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #20b2aa;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #178f8a;
+  }
+  
+  .queue, .sign-in, .setup {
+    margin-bottom: 20px;
+  }
+  
+  #queueList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  #queueList li {
+    background-color: #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .courts-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .court {
+    width: 220px;
+    padding: 10px;
+    background-color: #e0ffff;
+    border-radius: 12px;
+    border: 2px solid #20b2aa;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .court h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .court-field {
+    background: linear-gradient(to right, #e6f7ff, #c6f1f5);
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+  
+  .player {
+    background-color: #ffffff;
+    border: 1px solid #20b2aa;
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+
+  .court {
+    width: 300px;
+    position: relative;
+    background-color: #e0ffff;
+    border-radius: 12px;
+    border: 2px solid #20b2aa;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .court-image {
+    position: relative;
+    width: 100%;
+    background-image: url('court.jpg'); /* 使用你上傳的圖片 */
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 4/3;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  
+  .player-box {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  }
+  
+  /* 四個球友位置 */
+  .player1 { top: 20%; left: 20%; transform: translate(-50%, -50%); }
+  .player2 { top: 20%; left: 80%; transform: translate(-50%, -50%); }
+  .player3 { top: 80%; left: 20%; transform: translate(-50%, -50%); }
+  .player4 { top: 80%; left: 80%; transform: translate(-50%, -50%); }
+  
+  .sortable-name {
+    background-color: #f4f4f4;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 4px;
+    transition: background-color 0.2s;
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  .sortable-name.selected {
+    background-color: #a3d5ff;
+  }
+  
+  #sortedList {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .empty-courts {
+    margin-top: 20px;
+  }
+  
+  #emptyCourtsList {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #emptyCourtsList li {
+    padding: 6px 10px;
+    background-color: #e6ffe6;
+    border: 1px solid #90ee90;
+    border-radius: 6px;
+    margin: 4px 0;
+    display: inline-block;
+  }
+  

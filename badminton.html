@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>羽球簽到系統</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🏸 羽球簽到系統 🏸</h1>
+
+    <div class="setup">
+      <label for="courtCount">請輸入場地數：</label>
+      <input id="courtCount" type="number" min="1" value="2">
+      <button onclick="initialize()">開始</button>
+    </div>
+
+    <div id="main" style="display: none;">
+      <div class="sign-in">
+        <input id="nameInput" type="text" placeholder="輸入名字">
+        <button onclick="signIn()">簽到</button>
+      </div>
+
+      <div class="queue">
+        <h2>🧍 等候區</h2>
+        <ul id="queueList"></ul>
+        <button onclick="assignToCourts()">安排比賽</button>
+      </div>
+
+      <div class="queue">
+        <h2>🧍 排序區</h2>
+        <ul id="sortedList"></ul>
+        <button onclick="confirmSortedToQueue()">確認加入等候區</button>
+      </div>
+
+      <div class="empty-courts">
+        <h2>🎾 空場</h2>
+        <ul id="emptyCourtsList"></ul>
+      </div>      
+
+      <div id="courtsArea" class="courts-area"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
