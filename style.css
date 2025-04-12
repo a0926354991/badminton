@@ -132,10 +132,10 @@ body {
   }
   
   /* 四個球友位置 */
-  .player1 { top: 20%; left: 20%; transform: translate(-50%, -50%); }
-  .player2 { top: 20%; left: 80%; transform: translate(-50%, -50%); }
-  .player3 { top: 80%; left: 20%; transform: translate(-50%, -50%); }
-  .player4 { top: 80%; left: 80%; transform: translate(-50%, -50%); }
+  .player1 { top: 40%; left: 35%; transform: translate(-50%, -50%); }
+  .player2 { top: 40%; left: 65%; transform: translate(-50%, -50%); }
+  .player3 { top: 70%; left: 35%; transform: translate(-50%, -50%); }
+  .player4 { top: 70%; left: 65%; transform: translate(-50%, -50%); }
   
   .sortable-name {
     background-color: #f4f4f4;
